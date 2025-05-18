@@ -22,11 +22,9 @@ We also implemented **quantum-native interpretability** using input perturbation
 
 ## 🧰 Tools & Technologies
 
-- Python, PyTorch, Qiskit 2.x
+- Python, PyTorch, Qiskit 1.x
 - StandardScaler for normalization
 - StatevectorEstimator as the quantum backend
-- Custom PyTorch `autograd.Function` to enable end-to-end training with quantum layers
-- Plotly + ipywidgets for interactive dashboarding
 
 ## 📊 Exploratory Data Analysis
 
@@ -72,4 +70,6 @@ To map this back to the original RDKit descriptors, we:
 - Finally, we visualize the top contributing chemical descriptors to the quantum model's predictions.
 
 # tl;dr
-In this work, we present a novel hybrid quantum-classical pipeline that combines Variational Quantum Classifiers (VQCs) with Input Perturbation Attribution (IPA) and Principal Component Analysis (PCA) to extract interpretable insights from quantum models. By training a VQC on PCA-reduced features derived from high-dimensional RDKit molecular descriptors, we make quantum modeling feasible under current qubit limitations. We then apply IPA to estimate feature influence within the quantum decision process, and project those scores back to the original chemical descriptors to recover domain-relevant explanations. This layered interpretability framework offers a rare window into the inner workings of quantum machine learning models, providing practical attribution while maintaining end-to-end hybridization. To our knowledge, this combination of VQC + IPA + PCA back-projection has not been previously demonstrated in existing QML tutorials or literature.
+In this work, we present a novel hybrid quantum-classical pipeline that combines Variational Quantum Classifiers (VQCs) with Input Perturbation Attribution (IPA) and Principal Component Analysis (PCA) to extract interpretable insights from quantum models. By training a VQC on PCA-reduced features derived from high-dimensional RDKit molecular descriptors, we make quantum modeling feasible under current qubit limitations. We then apply IPA to estimate feature influence within the quantum decision process, and project those scores back to the original chemical descriptors to recover domain-relevant explanations. 
+
+This layered interpretability framework offers a rare window into the inner workings of quantum machine learning models, providing practical attribution while maintaining end-to-end hybridization. To our knowledge, this combination of VQC + IPA + PCA back-projection has not been previously demonstrated in existing QML tutorials or literature.
