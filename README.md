@@ -2,6 +2,8 @@
 
 *A hybrid quantum-classical model for interpretable drug-induced autoimmunity prediction.*
 
+![Team Quail Presentation](https://github.com/user-attachments/assets/d27e8b7c-b808-48e3-b451-2cc1b38362ad)
+
 ## 🧬 Introduction
 
 Drug-induced autoimmunity (DIA) is a complex phenomenon where pharmaceuticals trigger autoimmune reactions. Predicting which compounds are likely to induce DIA is a critical challenge in drug discovery and safety assessment.
